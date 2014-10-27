@@ -49,7 +49,6 @@ class TweetBot {
         
         twitter.postStatusUpdate(responseText, inReplyToStatusID: id_str, latitude: nil, longitude: nil, placeID: nil, displayCoordinates: nil, trimUser: nil, successBlock: { (result) -> Void in
             println("result: \(result)")
-            exit(0) // remove this line if you dare
         }) { (error) -> Void in
             println("error: \(error)")
         }
