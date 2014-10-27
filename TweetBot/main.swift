@@ -8,5 +8,6 @@
 
 import Foundation
 
-println("Hello, World!")
+TweetBot()
 
+NSRunLoop.currentRunLoop().run()
